@@ -8,5 +8,9 @@ app.listen(config.port, () => {
   console.log('Endpoints disponibles:');
   console.log(`  GET http://localhost:${config.port}/health`);
   console.log(`  GET http://localhost:${config.port}/api/categories`);
+  console.log(`  GET http://localhost:${config.port}/api/questions`);
+  console.log('');
+  console.log('Ejemplo con parámetros:');
+  console.log(`  GET http://localhost:${config.port}/api/questions?amount=10&category=24`);
 
 });
